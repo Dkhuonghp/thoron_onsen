@@ -424,7 +424,7 @@ header {
         }
         .image__items {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
             position: relative;
             z-index: 2;
             .item {
@@ -437,7 +437,7 @@ header {
                 background: var(--background-color);
                 position: absolute;
                 left: -5%;
-                top: 13%;
+                top: 20%;
                 z-index: -1;
                 width: 130%;
                 height: 100%;
@@ -456,11 +456,12 @@ header {
             flex-wrap: wrap;
             .icon__item {
                 display: flex;
+                gap: 1rem;
                 align-items: center;
-                gap: 2rem;
+                flex-direction: column;
                 img {
-                    width: 6rem;
-                    height: 6rem;
+                    width: 5rem;
+                    height: 5rem;
                 }
                 p {
                     font-size: var(--font-size-16);

@@ -486,7 +486,7 @@ header .menu__nav.open__menu {
 }
 .facilities .facilities__wrapper .image__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   position: relative;
   z-index: 2;
 }
@@ -500,7 +500,7 @@ header .menu__nav.open__menu {
   background: var(--background-color);
   position: absolute;
   left: -5%;
-  top: 13%;
+  top: 20%;
   z-index: -1;
   width: 130%;
   height: 100%;
@@ -521,12 +521,13 @@ header .menu__nav.open__menu {
 }
 .facilities .facilities__wrapper .icons .icon__item {
   display: flex;
+  gap: 1rem;
   align-items: center;
-  gap: 2rem;
+  flex-direction: column;
 }
 .facilities .facilities__wrapper .icons .icon__item img {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
 }
 .facilities .facilities__wrapper .icons .icon__item p {
   font-size: var(--font-size-16);
