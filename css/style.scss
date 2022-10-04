@@ -122,8 +122,7 @@ header {
 }
 // Banner
 .banner {
-
-    .banner__img {
+    &__img {
         background-image: url(../img/main.jpg);
         background-position: center;
         background-size: cover;
@@ -184,7 +183,6 @@ header {
                 width: 100%;
                 padding: 2rem 3%;
                 flex-direction: column;
-
             }
             .card {
                 border: 1px solid var(--color-white);
@@ -192,7 +190,6 @@ header {
                 width: 20%;
                 @media only screen and (max-width:768px) {
                     width: 100%;
-                    margin-bottom: 2rem;
                 }
                 .card__ttl {
                     font-size: 1.5rem;
@@ -440,7 +437,7 @@ header {
                 background: var(--background-color);
                 position: absolute;
                 left: -5%;
-                top: 20%;
+                top: 13%;
                 z-index: -1;
                 width: 130%;
                 height: 100%;
@@ -626,6 +623,7 @@ footer {
     color: var(--color-ttl);
 }
 
+
 @media only screen and (max-width: 768px) {
     // Header
     .header {
@@ -652,7 +650,15 @@ footer {
             &--ttl {
                 max-height: 65rem;
                 img {
-                    height: 20rem;
+                    height: 30rem;
+                }
+            }
+        }
+        .banner__details {
+            .content {
+                text-align: center;
+                .image {
+                    width: 100%;
                 }
             }
         }
@@ -782,10 +788,8 @@ footer {
                 grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
                 padding: 0 3%;
                 .item {
-                    font-size: var(--font-size-14);
-                    img {
-                        height: 100%;
-                    }
+                    font-size: var(--font-size-10);
+                    margin-bottom: 1rem;
                 }
             }
             .icons {
@@ -875,6 +879,31 @@ footer {
             .content {
                 font-size: var(--font-size-14);
                 padding: 0 3%;
+            }
+            .ttl {
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 414px) {
+      // Facilities
+      .facilities {
+        padding: 4rem 0;
+        .facilities__wrapper {
+            width: 100%;
+            margin: 0;
+            .image__items {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+                padding: 0 3%;
+                .item {
+                    font-size: var(--font-size-10);
+                    margin-bottom: 1rem;
+                }
             }
         }
     }
