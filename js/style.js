@@ -1,13 +1,10 @@
 const burger = document.querySelector('.burger__menu')
-
+const menuNav = document.querySelector('.menu__nav')
+const body = document.querySelector('body')
 burger.addEventListener('click', () => {
     burger.classList.toggle('open')
-})
-
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('.header')
-
-    header.classList.toggle('header__sticky', scrollY > 1100)
+    menuNav.classList.toggle('open__menu')
+    body.classList.toggle('noscroll')
 })
 
 // Loading animation
@@ -41,19 +38,19 @@ TweenMax.from(".banner__img--ttl ", 1, {
 })
 
 // Header animation
-const showAnim = gsap.from('.header', { 
-    yPercent: -100,
-    paused: true,
-    duration: 0.3
-  }).progress(1);
+// const showAnim = gsap.from('.header', { 
+//     yPercent: -100,
+//     paused: true,
+//     duration: 0.3
+//   }).progress(1);
   
-  ScrollTrigger.create({
-    start: "top top",
-    end: 99999,
-    onUpdate: (self) => {
-      self.direction === -1 ? showAnim.play() : showAnim.reverse()
-    }
-});
+//   ScrollTrigger.create({
+//     start: "top top",
+//     end: 99999,
+//     onUpdate: (self) => {
+//       self.direction === -1 ? showAnim.play() : showAnim.reverse()
+//     }
+// });
 
 // Scroll animation
 function animateFrom(elem, direction) {
