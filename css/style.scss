@@ -415,7 +415,7 @@ header {
 
     .facilities__wrapper {
         max-width: 1440px;
-        width: 70%;
+        width: 80%;
         margin: 0 auto 10%;
         position: relative;
         z-index: 1;
@@ -424,7 +424,7 @@ header {
         }
         .image__items {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
             position: relative;
             z-index: 2;
             .item {
@@ -458,7 +458,7 @@ header {
                 display: flex;
                 gap: 1rem;
                 align-items: center;
-                flex-direction: column;
+                // flex-direction: column;
                 img {
                     width: 5rem;
                     height: 5rem;

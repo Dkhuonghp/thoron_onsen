@@ -479,14 +479,14 @@ header .menu__nav.open__menu {
 }
 .facilities .facilities__wrapper {
   max-width: 1440px;
-  width: 70%;
+  width: 80%;
   margin: 0 auto 10%;
   position: relative;
   z-index: 1;
 }
 .facilities .facilities__wrapper .image__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   position: relative;
   z-index: 2;
 }
@@ -523,7 +523,6 @@ header .menu__nav.open__menu {
   display: flex;
   gap: 1rem;
   align-items: center;
-  flex-direction: column;
 }
 .facilities .facilities__wrapper .icons .icon__item img {
   width: 5rem;
