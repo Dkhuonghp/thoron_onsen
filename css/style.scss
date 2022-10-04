@@ -610,6 +610,12 @@ footer {
     .banner {
         .banner__img {
             height: 65vh;
+            &--ttl {
+                max-height: 65rem;
+                img {
+                    height: 20rem;
+                }
+            }
         }
     }
     // About

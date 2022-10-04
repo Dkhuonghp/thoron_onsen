@@ -653,6 +653,12 @@ footer {
   .banner .banner__img {
     height: 65vh;
   }
+  .banner .banner__img--ttl {
+    max-height: 65rem;
+  }
+  .banner .banner__img--ttl img {
+    height: 20rem;
+  }
   .about {
     padding-top: 5rem;
     gap: 2rem;
