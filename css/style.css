@@ -500,7 +500,7 @@ header .menu__nav.open__menu {
   background: var(--background-color);
   position: absolute;
   left: -5%;
-  top: 20%;
+  top: 12rem;
   z-index: -1;
   width: 130%;
   height: 100%;
