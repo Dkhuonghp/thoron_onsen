@@ -46,7 +46,7 @@ img {
 .facilities::before, .about::before {
   content: "inariyu";
   font-family: "Montserrat", sans-serif;
-  font-size: 24rem;
+  font-size: 20rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 4rem;
@@ -251,13 +251,15 @@ header .menu__nav.open__menu {
   margin: 0 auto;
   padding: 2rem 0;
   display: flex;
+  gap: 1rem;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
 }
 @media only screen and (max-width: 768px) {
   .banner .banner__details .content {
     width: 100%;
     padding: 2rem 3%;
+    flex-direction: column;
   }
 }
 .banner .banner__details .content .card {
@@ -285,11 +287,11 @@ header .menu__nav.open__menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 1rem;
   width: 100%;
 }
 .banner .banner__details .content .card .card__content .flex {
-  font-size: 1.3rem;
+  font-size: var(--font-size-10);
   display: flex;
   justify-content: space-between;
 }
@@ -307,8 +309,9 @@ header .menu__nav.open__menu {
   width: 6rem;
 }
 .banner .banner__details .content .ttl .ttl__content {
-  margin-left: 2rem;
-  font-size: 1.4rem;
+  margin-left: 1rem;
+  font-size: var(--font-size-10);
+  text-align: center;
 }
 @media only screen and (max-width: 768px) {
   .banner .banner__details .content .ttl .ttl__content {
@@ -317,7 +320,7 @@ header .menu__nav.open__menu {
   }
 }
 .banner .banner__details .image {
-  width: 33rem;
+  width: 25%;
 }
 
 .about {
@@ -337,7 +340,7 @@ header .menu__nav.open__menu {
 }
 @media only screen and (max-width: 768) {
   .about .about__wrapper .about__content {
-    font-size: 1.6rem;
+    font-size: var(--font-size-16);
   }
 }
 .about .about__wrapper .about__content h2 {

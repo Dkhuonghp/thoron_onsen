@@ -177,11 +177,14 @@ header {
             margin: 0 auto;
             padding: 2rem 0;
             display: flex;
+            gap: 1rem;
             flex-wrap: wrap;
-            justify-content: space-between;
+            align-items: center;
             @media only screen and (max-width: 768px) {
                 width: 100%;
                 padding: 2rem 3%;
+                flex-direction: column;
+
             }
             .card {
                 border: 1px solid var(--color-white);
@@ -204,10 +207,10 @@ header {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    padding: 1rem 3rem;
+                    padding: 1rem;
                     width: 100%;
                     .flex {
-                        font-size: 1.3rem;
+                        font-size: var(--font-size-10);
                         display: flex;
                         justify-content: space-between;
                     }
@@ -224,8 +227,9 @@ header {
                     width: 6rem;
                 }
                 .ttl__content {
-                    margin-left: 2rem;
-                    font-size: 1.4rem;
+                    margin-left: 1rem;
+                    font-size: var(--font-size-10);
+                    text-align: center;
                     @media only screen and (max-width:768px) {
                         margin: 1rem 0;
                         text-align: center;
@@ -235,7 +239,7 @@ header {
         }
     
         .image {
-            width: 33rem;
+            width: 25%;
         }
     }
 }
@@ -261,7 +265,7 @@ header {
         .about__content {
             margin-bottom: 10%;
             @media only screen and (max-width: 768) { 
-                font-size: 1.6rem;
+                font-size: var(--font-size-16);
             }
             h2 {
                 font-size: var(--font-size-30);
