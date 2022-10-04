@@ -424,7 +424,7 @@ header {
         }
         .image__items {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
             position: relative;
             z-index: 2;
             .item {
